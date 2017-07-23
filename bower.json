@@ -1,0 +1,26 @@
+{
+  "name": "babycuatoi",
+  "authors": [
+    "quangdv"
+  ],
+  "description": "html/css",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "bootstrap-select": "^1.11.2",
+    "jquery-rcrumbs": "^1.1.0",
+    "metisMenu": "^2.5.2"
+  }
+}

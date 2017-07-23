@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Product detail</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Plugin -->
+    <link href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="bower_components/jquery-rcrumbs/dist/jquery.rcrumbs.css" rel="stylesheet">
+    <link href="public/plugins/layerslider/css/layerslider.css" rel="stylesheet">
+    <link href="public/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="public/plugins/owl.carousel/assets/owl.theme.custom.css" rel="stylesheet">
+    <link href="public/plugins/mmenu/dist/css/jquery.mmenu.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link href="public/css/custom/custom-style.css" rel="stylesheet">
+    <link href="public/css/custom/custom-other.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="page">
+    <!-- Start Desktop Menu Scroll -->
+        <nav id="menu-scroll" class="hidden">
+            <div class="container inner">
+                <div class="row row-small row-flex">
+                    <div class="col-xs-2 com-flex com-flex-middle">
+                        <div class="width-1-1">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle btn-menu" data-toggle="dropdown">
+                                    <i class="fa fa-list"></i> <span>DANH MỤC</span>
+                                </a>
+                                <ul class="dropdown-menu main-menu">
+                                    <li>
+                                        <a href="#" class="menu-parent"><span class="icon-cat km"></span> Khuyến mãi mới</a>
+                                        <div class="sub-menu">
+                                            <ul class="nav nav-stacked nav-sub">
+                                                <li><a href="#"><b>Hàng giảm giá</b></a></li>
+                                                <li><a href="#"><b>Hàng hot</b></a></li>
+                                                <li><a href="#"><b>Nhiều người mua</b></a></li>
+                                            </ul>
+                                            <hr class="line">
+                                            <ul class="nav nav-stacked nav-sub">
+                                                <li><b>Danh mục 1</b></li>
+                                                <li><a href="#">Danh mục 1.1</a></li>
+                                                <li><a href="#">Danh mục 1.2</a></li>
+                                                <li><a href="#">Danh mục 1.3</a></li>
+                                            </ul>
+                                            <ul class="nav nav-stacked nav-sub">
+                                                <li><b>Danh mục 1</b></li>
+                                                <li><a href="#">Danh mục 1.1</a></li>
+                                                <li><a href="#">Danh mục 1.2</a></li>
+                                                <li><a href="#">Danh mục 1.3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-parent"><span class="icon-cat tm"></span> Đồ chơi thông minh</a>
+                                        <div class="sub-menu">
+                                            <ul class="nav nav-stacked nav-sub">
+                                                <li><b>Danh mục 1</b></li>
+                                                <li><a href="#">Danh mục 1.1</a></li>
+                                                <li><a href="#">Danh mục 1.2</a></li>
+                                                <li><a href="#">Danh mục 1.3</a></li>
+                                            </ul>
+                                            <ul class="nav nav-stacked nav-sub">
+                                                <li><b>Danh mục 1</b></li>
+                                                <li><a href="#">Danh mục 1.1</a></li>
+                                                <li><a href="#">Danh mục 1.2</a></li>
+                                                <li><a href="#">Danh mục 1.3</a></li>
+                                            </ul>
+                                            <ul class="nav nav-stacked nav-sub">
+                                                <li><b>Danh mục 1</b></li>
+                                                <li><a href="#">Danh mục 1.1</a></li>
+                                                <li><a href="#">Danh mục 1.2</a></li>
+                                                <li><a href="#">Danh mục 1.3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="icon-cat vd"></span> Đồ chơi vận động</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="icon-cat te"></span> Đồ chơi xe trẻ em</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="icon-cat vc"></span> Thiết bị vui chơi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="icon-cat bp"></span> Bể bơi - Phao bơi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="icon-cat bh"></span> Đồ dùng bơm hơi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-5 com-flex com-flex-middle">
+                        <form class="form-horizontal width-1-1">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span id="search_concept">Tất Cả</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#product">Sản phẩm</a></li>
+                                        <li><a href="#category">Danh mục</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">
+                                <input type="text" class="form-control" name="x" placeholder="Bạn muốn tìm gì cho bé?">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-xs-2 com-flex com-flex-middle">
+                        <div class="call-center">
+                            <h4>call center</h4>
+                            <span>1900 6089</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-3 com-flex com-flex-middle com-flex-right">
+                        <ul class="nav nav-pills navbar-right cart-manager-profile com-flex com-flex-middle">
+                            <li class="has-cart">
+                                <a href="#">
+                                    <img src="public/img/Shopping-Cart-Loaded-96.png" alt="">
+                                    <span class="quantity-cart-noti">1</span>
+                                </a>
+                            </li>
+                            <!--<li><a href="#">Đăng Nhập</a></li>-->
+                            <!--<li><a href="#">Đăng Kí</a></li>-->
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <img src="public/img/no-avatar.png" alt="">
+                                    quangdv <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu list-manager">
+                                    <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End Desktop Menu Scroll -->
+
+        <header id="header">
+            <div class="top hidden-xs">
+                <div class="container">
+                    <div class="inner-top">
+                        <img src="public/img/maker.png" alt="">
+                        <select name="" id="" class="selectpicker select-countries" data-size="5" data-style="btn-primary" data-width="150px">
+                            <option value="">Chọn khu vực</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Đà Nẵng</option>
+                            <option value="">TP HCM</option>
+                            <option value="">Hà Nội</option>
+                            <option value="">Đà Nẵng</option>
+                        </select>
+                        <!--<img class="img-responsive" src="public/img/logo-title.png" alt="">-->
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 visible-sm text-center mb-20">
+                            <img src="public/img/logo.png" alt="">
+                        </div>
+                        <div class="col-xs-3 visible-xs">
+                            <img class="img-responsive" src="public/img/logo.png" alt="">
+                        </div>
+                        <div class="col-md-7 col-md-offset-2 col-sm-8 col-xs-5">
+                            <div class="phone-branch">
+                                <ul class="nav nav-pills">
+                                    <li><i class="fa fa-phone-square"></i> <span>Hà Nội:</span>0912.345.678</li>
+                                    <li> - <span>Hải Phòng:</span>0912.345.678</li>
+                                    <li> - <span>Đà nẵng:</span>0912.345.678</li>
+                                    <li> - <span>TPHCM:</span>0912.345.678</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-4">
+                            <div class="clearfix">
+                                <img class="img-responsive pull-left hidden-xs" src="public/img/phone-help.png" alt="">
+                                <div class="phone-help pull-right">1900 6098</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="container">
+                    <div class="row hidden-xs">
+                        <div class="col-md-2">
+                            <div class="logo-relative hidden-sm">
+                                <a href="#">
+                                    <img src="public/img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-sm-7">
+                            <div class="form-search-home com-flex com-flex-middle">
+                                <form class="form-horizontal width-1-1">
+                                    <div class="input-group">
+                                        <div class="input-group-btn search-panel">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                                <span id="search_concept">Tất Cả</span> <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#product">Sản phẩm</a></li>
+                                                <li><a href="#category">Danh mục</a></li>
+                                            </ul>
+                                        </div>
+                                        <input type="hidden" name="search_param" value="all" id="search_param">
+                                        <input type="text" class="form-control" name="x" placeholder="Bạn muốn tìm gì cho bé?">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-5">
+                            <ul class="nav nav-pills navbar-right cart-manager-profile com-flex com-flex-middle">
+                                <li class="has-cart">
+                                    <a href="#">
+                                        <img src="public/img/Shopping-Cart-Loaded-96.png" alt="">
+                                        <span class="quantity-cart-noti">1</span>
+                                    </a>
+                                </li>
+                                <!--<li><a href="#">Đăng Nhập</a></li>-->
+                                <!--<li><a href="#">Đăng Kí</a></li>-->
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <img src="public/img/no-avatar.png" alt="">
+                                        quangdv <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+                                        <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav id="navbar">
+            <div class="container">
+                <nav class="navbar navbar-default mynav">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle hidden-xs" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Trigger Mmenu-->
+                        <a class="navbar-brand visible-xs" href="#mobile-menu">
+                            <i class="fa fa-list"></i>
+                        </a>
+                        <!-- Trigger Menu Aim-->
+                        <div class="navbar-brand dropdown hidden-xs">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-list"></i> <span>DANH MỤC</span>
+                            </a>
+                            <ul class="dropdown-menu main-menu">
+                                <li>
+                                    <a href="javascript:;" class="menu-parent"><span class="icon-cat km"></span> Khuyến mãi mới</a>
+                                    <div class="sub-menu">
+                                        <ul class="nav nav-stacked nav-sub">
+                                            <li><a href="#"><b>Hàng giảm giá</b></a></li>
+                                            <li><a href="#"><b>Hàng hot</b></a></li>
+                                            <li><a href="#"><b>Nhiều người mua</b></a></li>
+                                        </ul>
+                                        <hr class="line">
+                                        <ul class="nav nav-stacked nav-sub">
+                                            <li><b>Danh mục 1</b></li>
+                                            <li><a href="#">Danh mục 1.1</a></li>
+                                            <li><a href="#">Danh mục 1.2</a></li>
+                                            <li><a href="#">Danh mục 1.3</a></li>
+                                        </ul>
+                                        <ul class="nav nav-stacked nav-sub">
+                                            <li><b>Danh mục 1</b></li>
+                                            <li><a href="#">Danh mục 1.1</a></li>
+                                            <li><a href="#">Danh mục 1.2</a></li>
+                                            <li><a href="#">Danh mục 1.3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu-parent"><span class="icon-cat tm"></span> Đồ chơi thông minh</a>
+                                    <div class="sub-menu">
+                                        <ul class="nav nav-stacked nav-sub">
+                                            <li><b>Danh mục 1</b></li>
+                                            <li><a href="#">Danh mục 1.1</a></li>
+                                            <li><a href="#">Danh mục 1.2</a></li>
+                                            <li><a href="#">Danh mục 1.3</a></li>
+                                        </ul>
+                                        <ul class="nav nav-stacked nav-sub">
+                                            <li><b>Danh mục 1</b></li>
+                                            <li><a href="#">Danh mục 1.1</a></li>
+                                            <li><a href="#">Danh mục 1.2</a></li>
+                                            <li><a href="#">Danh mục 1.3</a></li>
+                                        </ul>
+                                        <ul class="nav nav-stacked nav-sub">
+                                            <li><b>Danh mục 1</b></li>
+                                            <li><a href="#">Danh mục 1.1</a></li>
+                                            <li><a href="#">Danh mục 1.2</a></li>
+                                            <li><a href="#">Danh mục 1.3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-cat vd"></span> Đồ chơi vận động</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-cat te"></span> Đồ chơi xe trẻ em</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-cat vc"></span> Thiết bị vui chơi</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-cat bp"></span> Bể bơi - Phao bơi</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-cat bh"></span> Đồ dùng bơm hơi</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form class="navbar-left search-mobile visible-xs">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span id="search_concept">Tất Cả</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#product">Sản phẩm</a></li>
+                                        <li><a href="#category">Danh mục</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">
+                                <input type="text" class="form-control" name="x" placeholder="Bạn muốn tìm gì cho bé?">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
+                        </form>
+
+                        <ul class="nav nav-pills mobile-cart visible-xs">
+                            <li class="forcart">
+                                <a href="#">
+                                    <img src="public/img/Shopping-Cart-Loaded-96-white.png" alt="">
+                                    <span class="quantity-cart-noti">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav second-nav">
+                            <li class="active"><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Hướng dẫn</a></li>
+                            <li><a href="#">Hỏi đáp</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+
+        <section id="content">
+            <div class="container">
+                <div class="rcrumbs my-crumb" id="breadcrumbs">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home"></i></a><span class="divider"><i class="fa fa-angle-right"></i></span></li>
+                        <li><a href="#">Đệm hơi INTEX đơn</a><span class="divider"><i class="fa fa-angle-right"></i></span></li>
+                        <li><a href="#">Đệm hơi INTEX đơn</a></li>
+                    </ul>
+                </div>
+
+                <div class="box-product-detail">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="name-product-detail">
+                                <h1>Đồ chơi âm nhạc đàn piano BB375-HỒNG</h1>
+                                <h4>Mã sản phẩm: KT148-HT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-sm-5">
+                            <div class="prod-galery">
+                                <div class="main-img">
+                                    <div class="inner">
+                                        <img id="change-main-img" class="img-responsive" src="public/img/products/main-img.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="wrap-carousel mb-20">
+                                    <div class="owl-carousel owl-theme thumb-carousel">
+                                        <div class="thumb-item active">
+                                            <div class="thumb-img">
+                                                <div class="inner">
+                                                    <a href="#" class="trigger-large-image" data-large-image="public/img/products/main-img.jpg">
+                                                        <img src="public/img/products/sp-1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumb-item">
+                                            <div class="thumb-img">
+                                                <div class="inner">
+                                                    <a href="#" class="trigger-large-image" data-large-image="public/img/products/sp-1.jpg">
+                                                        <img src="public/img/products/sp-1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumb-item">
+                                            <div class="thumb-img">
+                                                <div class="inner">
+                                                    <a href="#" class="trigger-large-image" data-large-image="public/img/products/main-img.jpg">
+                                                        <img src="public/img/products/sp-1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumb-item">
+                                            <div class="thumb-img">
+                                                <div class="inner">
+                                                    <a href="#" class="trigger-large-image" data-large-image="public/img/products/main-img.jpg">
+                                                        <img src="public/img/products/sp-1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="thumb-item">
+                                            <div class="thumb-img">
+                                                <div class="inner">
+                                                    <a href="#" class="trigger-large-image" data-large-image="public/img/products/main-img.jpg">
+                                                        <img src="public/img/products/sp-1.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-7">
+                            <div class="prod-information">
+                                <p class="description">
+                                    Đồ chơi cầu trượt chất lượng cao, máng lượn cực dày dặn, xà xích khỏe, được sản xuất theo Tiêu chuẩn Châu Âu,có chứng nhận của Tổng cục TCĐL Chất lượng, NK và PP bởi cty BBT Việt Nam, số 1 về đồ chơi trẻ em, đồ chơi cho bé an toàn, thiết bị giáo dục và thiết bị khu vui chơi giải trí.
+                                </p>
+                                <p class="manufacturer">
+                                    <b>Hãng sản xuất:</b> <a href="#">BBT Global</a>
+                                </p>
+                                <p class="price-sale-title"><b>Giá khuyến mãi</b> <span>-20%</span></p>
+                                <div class="price-at">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="row mb-5">
+                                                <span class="col-xs-6 at">Tại Hà Nội</span>
+                                                <span class="col-xs-6 pr active">1.400.000 VND</span>
+                                            </div>
+                                            <div class="row mb-5">
+                                                <span class="col-xs-6 at">Tại Hồ Chí Minh</span>
+                                                <span class="col-xs-6 pr">1.400.000 VND</span>
+                                            </div>
+                                            <div class="row mb-5">
+                                                <span class="col-xs-6 at">Tại Đà Nẵng</span>
+                                                <span class="col-xs-6 pr">1.400.000 VND</span>
+                                            </div>
+                                            <div class="row mb-5">
+                                                <span class="col-xs-6 at">Tại Hải Phòng</span>
+                                                <span class="col-xs-6 pr">1.400.000 VND</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-10">
+                                            <ul class="nav nav-stacked list-bh">
+                                                <li>Bảo hành: 6 tháng</li>
+                                                <li>Độ tuổi: dành cho bé từ 1.5 đến 6 tuổi</li>
+                                                <li>Kích thước: 110 x 50 x 80 (cm)</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><b>Mua hàng</b></p>
+                                <div class="row">
+                                    <div class="col-md-6 mb-20 text-center">
+                                        <a href="#" class="btn-muahangngay">Mua ngay</a>
+                                    </div>
+                                    <div class="col-md-6 mb-20 text-center">
+                                        <a href="#" class="btn-themvaogio"><i class="fa fa-shopping-cart"></i> Thêm vào giỏ</a>
+                                    </div>
+                                </div>
+                                <div class="row mb-20">
+                                    <div class="col-md-3 col-sm-5 col-xs-4"><a href="#">Góp ý - Báo lỗi</a></div>
+                                    <div class="col-md-2 col-sm-7 col-xs-8"><a href="#">Hướng dẫn</a></div>
+                                </div>
+                                <div class="cal-center mb-20">
+                                    <h4> CALL CENTER 19006089 <span>(8h00-18h00, Thứ 2- CN)</span></h4>
+                                    <div class="row mb-5">
+                                        <div class="col-md-3 col-sm-4 tp">Hà Nội</div>
+                                        <div class="col-md-9 col-sm-8 sdt">: 04.399.00.366 - 0934.635.266 - 0964.73.9966</div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-3 col-sm-4 tp">HCM Tân Bình</div>
+                                        <div class="col-md-9 col-sm-8 sdt">: 0962.810.066 - 0936.258.966</div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-3 col-sm-4 tp">HCM Bình Thạnh</div>
+                                        <div class="col-md-9 col-sm-8 sdt">: 0868.246.246 - 0948.196.996</div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-3 col-sm-4 tp">Đà Nẵng</div>
+                                        <div class="col-md-9 col-sm-8 sdt">: 096.894.2346 - 093.177.2346</div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-3 col-sm-4 tp">Hải Phòng</div>
+                                        <div class="col-md-9 col-sm-8 sdt">: 0916.546.266  - 0968.010.146</div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-md-3 col-sm-4 tp">Bán Buôn</div>
+                                        <div class="col-md-9 col-sm-8 sdt">: 0936.323.066 -  0964.135.511</div>
+                                    </div>
+                                </div>
+                                <p><b>Dịch vụ & Khuyến mãi</b></p>
+                                <ul class="nav nav-stacked list-gift">
+                                    <li>Tặng 01 trái bóng rổ và bơm bóng trị giá 50.000 VNĐ</li>
+                                    <li>Tặng 01 trái bóng rổ và bơm bóng trị giá 50.000 VNĐ</li>
+                                    <li>Tặng 01 trái bóng rổ và bơm bóng trị giá 50.000 VNĐ</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-sm-12">
+                            <!-- TAB NAVIGATION -->
+                            <ul class="nav nav-tabs new-tabs" role="tablist">
+                                <li class="active"><a href="#tab1" role="tab" data-toggle="tab">Mô tả sản phẩm</a></li>
+                                <li><a href="#tab2" role="tab" data-toggle="tab">Thông số kĩ thuật</a></li>
+                                <li><a href="#tab3" role="tab" data-toggle="tab">Video</a></li>
+                            </ul>
+                            <!-- TAB CONTENT -->
+                            <div class="tab-content">
+                                <div class="active tab-pane fade in" id="tab1">
+                                    <div class="content-des">
+                                        <h4 style="color: #0f6daf;font-size: 31px;font-weight: bold;">Mô tả sản phẩm</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod justo. Duis porta dui ut mauris pharetra finibus. Donec tincidunt lorem vel malesuada semper. Integer in quam pulvinar, efficitur mi sed, hendrerit nisi. Maecenas commodo orci quis enim vestibulum, quis vulputate neque convallis. Nunc in gravida metus, eget dignissim mi. Nulla convallis interdum eros non rhoncus. In facilisis, dolor ut faucibus tincidunt, urna purus sodales augue, non pellentesque turpis felis facilisis mi. Nunc a auctor tortor. Proin dui felis, vehicula at nisl sed, ullamcorper varius sapien. Mauris egestas aliquet nisl, sit amet aliquam mauris ultricies id. Cras accumsan, metus vel malesuada tempor, dolor velit feugiat purus, ut ullamcorper justo felis vitae neque. Donec faucibus ac tortor et gravida.
+                                        </p>
+                                        <p>
+                                            Nulla aliquet sem arcu, commodo rhoncus elit placerat nec. Pellentesque porttitor est vitae nibh bibendum egestas. Fusce urna dolor, imperdiet pellentesque massa tristique, suscipit commodo sapien. In hac habitasse platea dictumst. Phasellus vitae sem maximus, pharetra massa quis, dignissim nunc. Mauris dictum, tellus ut ultrices cursus, elit est luctus nisl, in condimentum risus tellus sit amet leo. Integer tempor sed risus eleifend facilisis.
+                                        </p>
+                                        <p>
+                                            Aliquam eu rutrum enim. Nullam ac vulputate nisl. Pellentesque est orci, egestas lacinia commodo eu, ornare non mauris. Sed ac commodo tortor. Fusce varius eros in volutpat efficitur. Vivamus eget viverra lorem. Pellentesque venenatis elit ac nunc fringilla euismod. Nullam eget est vitae enim aliquam pulvinar vel non dolor. Aliquam erat volutpat. Nulla lacus sem, aliquet ut velit in, sodales ultrices ex.
+                                        </p>
+                                        <p>
+                                            Etiam nec tortor facilisis, ullamcorper metus eu, cursus libero. Maecenas dui nunc, porta at vulputate nec, dignissim sagittis elit. Pellentesque a tristique nunc, a ultricies purus. Suspendisse massa lacus, tristique vitae est sed, gravida vulputate est. Aliquam aliquet erat urna, sit amet efficitur nunc tempus in. Suspendisse ut nunc ut velit maximus maximus eu in ex. Vestibulum quam ipsum, hendrerit quis ipsum et, laoreet finibus lacus. Pellentesque posuere ex mauris, eleifend faucibus orci consequat nec. Integer rutrum sollicitudin sem, tristique congue diam volutpat quis. Aliquam vulputate justo sed ante finibus tempus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab2">
+                                    <div class="content-des">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa dolore eius eligendi ex exercitationem in ipsam maiores neque perspiciatis praesentium quae qui sint vero, voluptates? Deserunt earum eius tempore.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab3">
+                                    <div class="content-des">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores culpa dolore eius eligendi ex exercitationem in ipsam maiores neque perspiciatis praesentium quae qui sint vero, voluptates? Deserunt earum eius tempore.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-sm-12">
+                            <div class="site-title">
+                                <h4>Sản phẩm cùng danh mục</h4>
+                            </div>
+                            <div class="wrap-carousel">
+                                <div class="owl-carousel owl-theme deal-carousel">
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="prod-item">
+                                        <div class="prod-img">
+                                            <span class="discount">-20%</span>
+                                            <div class="inner">
+                                                <a href="#">
+                                                    <img src="public/img/products/sp-1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="prod-info">
+                                            <h1 class="prod-name"><a href="#">Tên Sản Phẩm</a></h1>
+                                            <h4 class="prod-price">1.400.000 VND</h4>
+                                            <div class="text-center mt-20">
+                                                <a href="#" class="btn btn-primary add-to-cart"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-sm-12">
+                            <div class="site-title">
+                                <h4>Chương trình khuyến mãi</h4>
+                            </div>
+
+                            <div class="">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod justo. Duis porta dui ut mauris pharetra finibus. Donec tincidunt lorem vel malesuada semper. Integer in quam pulvinar, efficitur mi sed, hendrerit nisi. Maecenas commodo orci quis enim vestibulum, quis vulputate neque convallis. Nunc in gravida metus, eget dignissim mi. Nulla convallis interdum eros non rhoncus. In facilisis, dolor ut faucibus tincidunt, urna purus sodales augue, non pellentesque turpis felis facilisis mi. Nunc a auctor tortor. Proin dui felis, vehicula at nisl sed, ullamcorper varius sapien. Mauris egestas aliquet nisl, sit amet aliquam mauris ultricies id. Cras accumsan, metus vel malesuada tempor, dolor velit feugiat purus, ut ullamcorper justo felis vitae neque. Donec faucibus ac tortor et gravida.
+                                </p>
+                                <p>
+                                    Nulla aliquet sem arcu, commodo rhoncus elit placerat nec. Pellentesque porttitor est vitae nibh bibendum egestas. Fusce urna dolor, imperdiet pellentesque massa tristique, suscipit commodo sapien. In hac habitasse platea dictumst. Phasellus vitae sem maximus, pharetra massa quis, dignissim nunc. Mauris dictum, tellus ut ultrices cursus, elit est luctus nisl, in condimentum risus tellus sit amet leo. Integer tempor sed risus eleifend facilisis.
+                                </p>
+                                <p>
+                                    Aliquam eu rutrum enim. Nullam ac vulputate nisl. Pellentesque est orci, egestas lacinia commodo eu, ornare non mauris. Sed ac com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-20">
+                        <div class="col-sm-12">
+                            <div class="site-title">
+                                <h4>Về đồ chơi của bé</h4>
+                            </div>
+
+                            <div class="">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a euismod justo. Duis porta dui ut mauris pharetra finibus. Donec tincidunt lorem vel malesuada semper. Integer in quam pulvinar, efficitur mi sed, hendrerit nisi. Maecenas commodo orci quis enim vestibulum, quis vulputate neque convallis. Nunc in gravida metus, eget dignissim mi. Nulla convallis interdum eros non rhoncus. In facilisis, dolor ut faucibus tincidunt, urna purus sodales augue, non pellentesque turpis felis facilisis mi. Nunc a auctor tortor. Proin dui felis, vehicula at nisl sed, ullamcorper varius sapien. Mauris egestas aliquet nisl, sit amet aliquam mauris ultricies id. Cras accumsan, metus vel malesuada tempor, dolor velit feugiat purus, ut ullamcorper justo felis vitae neque. Donec faucibus ac tortor et gravida.
+                                </p>
+                                <p>
+                                    Nulla aliquet sem arcu, commodo rhoncus elit placerat nec. Pellentesque porttitor est vitae nibh bibendum egestas. Fusce urna dolor, imperdiet pellentesque massa tristique, suscipit commodo sapien. In hac habitasse platea dictumst. Phasellus vitae sem maximus, pharetra massa quis, dignissim nunc. Mauris dictum, tellus ut ultrices cursus, elit est luctus nisl, in condimentum risus tellus sit amet leo. Integer tempor sed risus eleifend facilisis.
+                                </p>
+                                <p>
+                                    Aliquam eu rutrum enim. Nullam ac vulputate nisl. Pellentesque est orci, egestas lacinia commodo eu, ornare non mauris. Sed ac com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="top-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <ul class="nav nav-stacked mb-30">
+                                <li>Bản quyền ©2012 Babycuatoi.vn – Chăm sóc bé yêu!</li>
+                                <li>Liên kết: Intex Việt Nam</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-8">
+                            <ul class="nav nav-stacked mb-30">
+                                <li>CÔNG TY CP SẢN XUẤT THƯƠNG MẠI VÀ DỊCH VỤ BBT VIỆT NAM, ĐKKD 0105815592</li>
+                                <li>Showroom HN: Số 75, LK6A Làng Việt Kiêu Châu Âu, Nguyễn Văn Lộc, Hà Nội, ĐT: 04.39900366</li>
+                                <li>Chi nhánh Tp.HCM1: Số 538/2A Lý Thường Kiệt - P7 - Q. Tân Bình - Tp. HCM, ĐT: 0948.196.996 - 0962.810.066</li>
+                                <li>Chi nhánh Tp.HCM2: Số 725 Xô Viết Nghệ Tĩnh - P.26- Q. Bình Thạnh - Tp. HCM, ĐT: 0918.115.066 - 0936.258.966</li>
+                                <li>Chi nhánh Đà Nẵng: Số 448 Điện Biên Phủ, Thanh Khê, Đà Nẵng, ĐT 0968.942.346 - 0931.772.346</li>
+                                <li>Chi nhánh HP: 70 Trần Nguyên Hãn, Q.Lê Chân - Hải Phòng - ĐT: 0916.546.266</li>
+                                <li>Website TMĐT Bán Hàng - Đăng ký với Bộ Công Thương</li>
+                            </ul>
+                            <p>Sitemap: Sitemap News Sitemap Product Sitemap Answer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="middle-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="nav nav-stacked">
+                                <li>Đồ Chơi Trẻ Em - Thế Giới Đồ Chơi An Toàn Cho Bé Yêu</li>
+                                <li>5 Lý do tại sao nên mua Đồ Chơi Trẻ Em, Đồ Chơi Cho Bé Tại Babycuatoi.vn</li>
+                                <li>- Babycuatoi.vn thường xuyên có những chương trình khuyến mãi Đồ Chơi Trẻ Em để tri ân khách hàng.</li>
+                                <li>- Tất cả các sản phẩm đều đạt tiêu chuẩn chất lượng đồ chơi trẻ em xuất khẩu Mỹ và Châu Âu, tuyệt đối an toàn cho bé khi sử dụng.</li>
+                                <li>- Các sản phẩm đều đạt tiêu chuẩn chất lượng do Tổng cục tiêu chẩn đo lường chất lượng Việt Nam cấp.</li>
+                                <li>- Hơn 3 năm hoạt động, Babycuatoi.vn luôn được khách hàng tin tưởng và lựa chọn mua đồ chơi trẻ em cho bé.</li>
+                                <li>- Babycuatoi.vn có sứ mệnh mang các sản phẩm đồ chơi trẻ em an toàn cho bé yêu vì sự phát triển trưởng thành của các con.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-right">
+                            <a href="#" class="phone"><i class="fa fa-phone"></i> 1900 6098</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <nav id="mobile-menu">
+            <ul>
+                <li>
+                    <span>Khuyến mãi mới</span>
+                    <ul>
+                        <li><a href="#"><b>Hàng giảm giá</b></a></li>
+                        <li><a href="#"><b>Hàng hot</b></a></li>
+                        <li><a href="#"><b>Nhiều người mua</b></a></li>
+                        <li><a href="#"><b>Danh mục 1</b></a></li>
+                        <li><a href="#">Danh mục 1.1</a></li>
+                        <li><a href="#">Danh mục 1.2</a></li>
+                        <li><a href="#">Danh mục 1.3</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Đồ chơi thông minh</span>
+                    <ul class="nav nav-stacked nav-sub">
+                        <li><a href="#"><b>Danh mục 1</b></a></li>
+                        <li><a href="#">Danh mục 1.1</a></li>
+                        <li><a href="#">Danh mục 1.2</a></li>
+                        <li><a href="#">Danh mục 1.3</a></li>
+                        <li><a href="#"><b>Danh mục 2</b></a></li>
+                        <li><a href="#">Danh mục 2.1</a></li>
+                        <li><a href="#">Danh mục 2.2</a></li>
+                        <li><a href="#">Danh mục 2.3</a></li>
+                        <li><a href="#"><b>Danh mục 3</b></a></li>
+                        <li><a href="#">Danh mục 3.1</a></li>
+                        <li><a href="#">Danh mục 3.2</a></li>
+                        <li><a href="#">Danh mục 3.3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-cat vd"></span> Đồ chơi vận động</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-cat te"></span> Đồ chơi xe trẻ em</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-cat vc"></span> Thiết bị vui chơi</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-cat bp"></span> Bể bơi - Phao bơi</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-cat bh"></span> Đồ dùng bơm hơi</a>
+                </li>
+
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <a href="#" id="trigger-totop">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Angular -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="public/plugins/jquery/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+    <script src="bower_components/jquery-rcrumbs/dist/jquery.rcrumbs.min.js"></script>
+
+    <script src="public/plugins/menuaim/dist/jquery.menu-aim.js"></script>
+
+    <script src="public/plugins/mmenu/dist/js/jquery.mmenu.min.js"></script>
+
+    <script src="public/plugins/layerslider/js/greensock.js"></script>
+    <script src="public/plugins/layerslider/js/layerslider.transitions.js"></script>
+    <script src="public/plugins/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+
+    <script src="public/plugins/owl.carousel/owl.carousel.min.js"></script>
+    <!-- App.js -->
+    <script src="public/js/common.script.js"></script>
+    <script src="public/js/product-detail.script.js"></script>
+</body>
+</html>

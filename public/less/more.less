@@ -1,0 +1,439 @@
+.margin-remove{
+  margin: 0;
+}
+
+.mt-10{
+  margin-top: 10px;
+}
+
+.mt-15{
+  margin-top: 15px;
+}
+
+.mt-20{
+  margin-top: 20px;
+}
+
+.mb-5{
+  margin-bottom: 5px;
+}
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
+.mb-15{
+  margin-bottom: 15px;
+}
+
+.mb-20{
+  margin-bottom: 20px;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+}
+
+.mtb-20{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.width-1-1{
+  width: 100%;
+}
+
+.height-1-1{
+  height: 100%;
+}
+
+/*Custom row flex*/
+.row-flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row-flex:after,
+.row-flex:before {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+.row-flex:after {
+  clear: both;
+}
+.row-flex [class^="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*End Custom row flex*/
+/* ========================================================================
+   Component: Flex
+ ========================================================================== */
+.com-flex {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.com-flex-inline {
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+/*
+ * Fixes initial flex-shrink value in IE10
+ */
+.com-flex > *,
+.com-flex-inline > * {
+  -ms-flex-negative: 1;
+}
+/* Alignment
+ ========================================================================== */
+/*
+ * Vertical alignment
+ * Default value is `stretch`
+ */
+.com-flex-top {
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+.com-flex-middle {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.com-flex-bottom {
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+/*
+ * Horizontal alignment
+ * Default value is `flex-start`
+ */
+.com-flex-center {
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.com-flex-right {
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.com-flex-space-between {
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.com-flex-space-around {
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+/* Direction
+ ========================================================================== */
+.com-flex-row-reverse {
+  -ms-flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.com-flex-column {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.com-flex-column-reverse {
+  -ms-flex-direction: column-reverse;
+  -webkit-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+/* Wrap
+ ========================================================================== */
+.com-flex-nowrap {
+  -ms-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.com-flex-wrap {
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.com-flex-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+  -webkit-flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
+}
+/*
+ * Horizontal alignment
+ * Default value is `stretch`
+ */
+.com-flex-wrap-top {
+  -ms-flex-line-pack: start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+.com-flex-wrap-middle {
+  -ms-flex-line-pack: center;
+  -webkit-align-content: center;
+  align-content: center;
+}
+.com-flex-wrap-bottom {
+  -ms-flex-line-pack: end;
+  -webkit-align-content: flex-end;
+  align-content: flex-end;
+}
+.com-flex-wrap-space-between {
+  -ms-flex-line-pack: justify;
+  -webkit-align-content: space-between;
+  align-content: space-between;
+}
+.com-flex-wrap-space-around {
+  -ms-flex-line-pack: distribute;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+/* Item ordering
+ ========================================================================== */
+/*
+ * Default is 0
+ */
+.com-flex-order-first {
+  -ms-flex-order: -1;
+  -webkit-order: -1;
+  order: -1;
+}
+.com-flex-order-last {
+  -ms-flex-order: 99;
+  -webkit-order: 99;
+  order: 99;
+}
+/* Phone landscape and bigger */
+@media (min-width: 480px) {
+  .com-flex-order-first-small {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .com-flex-order-last-small {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+/* Tablet and bigger */
+@media (min-width: 768px) {
+  .com-flex-order-first-medium {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .com-flex-order-last-medium {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+/* Desktop and bigger */
+@media (min-width: 960px) {
+  .com-flex-order-first-large {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .com-flex-order-last-large {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+  .com-flex-order-first-xlarge {
+    -ms-flex-order: -1;
+    -webkit-order: -1;
+    order: -1;
+  }
+  .com-flex-order-last-xlarge {
+    -ms-flex-order: 99;
+    -webkit-order: 99;
+    order: 99;
+  }
+}
+/* Item dimensions
+ ========================================================================== */
+/*
+ * Initial: 0 1 auto
+ * Content dimensions, but shrinks
+ */
+/*
+ * No Flex: 0 0 auto
+ * Content dimensions
+ */
+.com-flex-item-none {
+  -ms-flex: none;
+  -webkit-flex: none;
+  flex: none;
+}
+/*
+ * Relative Flex: 1 1 auto
+ * Space is allocated considering content
+ * 1. Fixes flex-shrink value in IE10
+ */
+.com-flex-item-auto {
+  -ms-flex: auto;
+  -webkit-flex: auto;
+  flex: auto;
+  /* 1 */
+  -ms-flex-negative: 1;
+}
+/*
+ * Absolute Flex: 1 1 0%
+ * Space is allocated solely based on flex
+ */
+.com-flex-item-1 {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+
+//Line-clamp
+.line-clamp {
+  display: block;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative;
+  line-height: 1.5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 !important;
+}
+.line-clamp:after {
+  content: '...';
+  text-align: right;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  display: block;
+  position: absolute;
+  height: calc(1.5em);
+}
+@supports (-webkit-line-clamp: 1) {
+  .line-clamp:after {
+    display: none !important;
+  }
+}
+.line-clamp-1 {
+  -webkit-line-clamp: 1;
+  height: calc(1.5em);
+}
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+  height: calc(3em);
+}
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+  height: calc(4.5em);
+}
+.line-clamp-4 {
+  -webkit-line-clamp: 4;
+  height: calc(6em);
+}
+.line-clamp-5 {
+  -webkit-line-clamp: 5;
+  height: calc(7.5em);
+}
+
+
+//Row small
+.row-small{
+  margin-left: -5px;
+  margin-right: -5px;
+  [class^="col-"]{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+//Row Collapse
+.row-collapse{
+  margin-left: 0;
+  margin-right: 0;
+  [class^="col-"]{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+//More...
+.relative{
+  position: relative;
+}
+
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//Custom Nav on Hover
+.newNavbarDj .nav > li > a:hover,
+.newNavbarDj .nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+.newNavbarDj .nav > li.disabled > a {
+  color: #777777;
+}
+.newNavbarDj .nav > li.disabled > a:hover,
+.newNavbarDj .nav > li.disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.newNavbarDj .nav .open > a,
+.newNavbarDj .nav .open > a:hover,
+.newNavbarDj .nav .open > a:focus {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.newNavbarDj .dropdown-menu > li > a:hover,
+.newNavbarDj .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #7c7c85;
+}
+.newNavbarDj .dropdown-menu > .active > a,
+.newNavbarDj .dropdown-menu > .active > a:hover,
+.newNavbarDj .dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #337ab7;
+}
+
+@media (max-width: 767px){
+  .navbar-nav .open .dropdown-menu>li>a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 40px !important;
+  }
+}
+
+/*New tabs*/
+.nav-tabs { border-bottom: 2px solid #DDD; }
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+.nav-tabs > li > a { border: none; color: #666; }
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+.nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
